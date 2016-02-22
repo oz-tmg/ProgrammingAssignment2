@@ -32,7 +32,7 @@ makeCacheMatrix <- function(x = matrix()) {
 # retrieve the inverse from the cache.
 
 cacheSolve <- function(x=matrix(), ...) {
-  im<-x$getinverse()                   A# 
+  im<-x$getinverse()                   # 
   if(!is.null(im)){                    # Checks to see if inverse matrix has been calculated; if so it returns
     message("getting cached data")     #    the cached matrix stored in the global environment.  
     return(im)                         # Returns the already inverted matrix forbidding further line implementation
